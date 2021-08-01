@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pomocnik_3.0.Database", "Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pomocnik_3.0.BusinessLogic", "Pomocnik_3.0.BusinessLogic\Pomocnik_3.0.BusinessLogic.csproj", "{8B1FCCE8-8723-4B8E-A842-AA0D4CCDAF12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pomocnik_3.0.Settings", "Pomocnik_3.0.Settings\Pomocnik_3.0.Settings.csproj", "{7EE1AC2B-9476-433A-AB6C-BE57955B2A65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pomocnik_3.0.Settings", "Pomocnik_3.0.Settings\Pomocnik_3.0.Settings.csproj", "{6E48D0E6-EE1E-4A6C-9D9D-C0D3DF4B6FB6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{8B1FCCE8-8723-4B8E-A842-AA0D4CCDAF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B1FCCE8-8723-4B8E-A842-AA0D4CCDAF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B1FCCE8-8723-4B8E-A842-AA0D4CCDAF12}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7EE1AC2B-9476-433A-AB6C-BE57955B2A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7EE1AC2B-9476-433A-AB6C-BE57955B2A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7EE1AC2B-9476-433A-AB6C-BE57955B2A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7EE1AC2B-9476-433A-AB6C-BE57955B2A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E48D0E6-EE1E-4A6C-9D9D-C0D3DF4B6FB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E48D0E6-EE1E-4A6C-9D9D-C0D3DF4B6FB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E48D0E6-EE1E-4A6C-9D9D-C0D3DF4B6FB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E48D0E6-EE1E-4A6C-9D9D-C0D3DF4B6FB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

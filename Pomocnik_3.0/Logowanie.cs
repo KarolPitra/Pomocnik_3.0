@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pomocnik_3._0.Domain;
+using Pomocnik_3._0.Settings;
 
 namespace Pomocnik_3._0
 {
@@ -18,12 +19,12 @@ namespace Pomocnik_3._0
         /// </summary>
         private IAutoryzacja _autoryzacja;
         public Uzytkownik _uzytkownik;
-        private UstawieniaAplikacji _ustawieniaAplikacji;
+        private UstawieniaUzytkownika _ustawieniaAplikacji;
 
         /// <summary>
         /// Konstruktor którego głównym zadaniem jest wstrzyknięcie odpowiedniego sposobu autoryzacji
         /// </summary>
-        public Logowanie(IAutoryzacja autoryzacja, Uzytkownik uzytkownik, UstawieniaAplikacji ustawieniaAplikacji)
+        public Logowanie(IAutoryzacja autoryzacja, Uzytkownik uzytkownik, UstawieniaUzytkownika ustawieniaAplikacji)
         {
             InitializeComponent();
             
@@ -66,7 +67,7 @@ namespace Pomocnik_3._0
                 return;
             }
 
-            MessageBox.Show($"Nieprawidłowy login lub hasło!", $"Logowanie [{(RodzajeAutoryzacji)Properties.Settings.Default.sposobAutoryzacji}]", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            MessageBox.Show($"Nieprawidłowy login lub hasło!", $"Logowanie [{(RodzajeAutoryzacji)_ustawieniaAplikacji.sposobAutoryzacji}]", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
 

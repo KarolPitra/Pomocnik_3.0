@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pomocnik_3._0.Domain;
+using Pomocnik_3._0.Settings;
 
 namespace Pomocnik_3._0
 {
     public partial class Ustawienia : Form
     {
-        private UstawieniaAplikacji _ustawieniaAplikacji;
+        private UstawieniaUzytkownika _ustawieniaAplikacji;
         List<RadioButton> _radioButton = new List<RadioButton>();
         private string _haslo;
         private string _login;
         private int _sposobAutoryzacji;
         
-        public Ustawienia(UstawieniaAplikacji ustawieniaAplikacji)
+        public Ustawienia(UstawieniaUzytkownika ustawieniaAplikacji)
         {
             InitializeComponent();
 
@@ -32,7 +33,6 @@ namespace Pomocnik_3._0
         private void ustawDaneNaFormularzu()
         {
             checkBoxZapamietajPoswiadczenia.Checked = _ustawieniaAplikacji.czyZapamietacLogin;
-            _haslo = _ustawieniaAplikacji.logowanieHaslo;
             _login = _ustawieniaAplikacji.logowanieLogin;
             _sposobAutoryzacji = _ustawieniaAplikacji.sposobAutoryzacji;
             textBoxHaslo.Text = _haslo;

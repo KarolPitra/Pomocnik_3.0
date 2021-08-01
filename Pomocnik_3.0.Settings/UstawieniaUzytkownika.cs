@@ -1,84 +1,81 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Windows.Forms;
 using Pomocnik_3._0.Domain;
-
 
 namespace Pomocnik_3._0.Settings
 {
     public class UstawieniaUzytkownika : IUstawienia
     {
-
-        public string logowanieLogin 
+        
+        
+        public string logowanieLogin
         {
-            get 
+            get
             {
-                return Settings.Ustawienia.Default.logowanieLogin;
+                return Settings.UstawieniaApp.Default.logowanieLogin;
             }
-            set 
+            set
             {
-                Settings.Ustawienia.Default.logowanieLogin = value;
-            }
+                Settings.UstawieniaApp.Default.logowanieLogin = value;
+            } 
         }
         public string logowanieHaslo
         {
             get
             {
-                return Settings.Ustawienia.Default.logowanieLogin;
+                return Settings.UstawieniaApp.Default.logowanieHaslo;
             }
             set
             {
-                Settings.Ustawienia.Default.logowanieLogin = value;
+                Settings.UstawieniaApp.Default.logowanieHaslo = value;
             }
         }
         public int sposobAutoryzacji
         {
             get
             {
-                return Settings.Ustawienia.Default.sposobAutoryzacji;
+                return Settings.UstawieniaApp.Default.sposobAutoryzacji;
             }
             set
             {
-                Settings.Ustawienia.Default.sposobAutoryzacji = value;
+                Settings.UstawieniaApp.Default.sposobAutoryzacji = value;
             }
         }
         public bool czyZapamietacLogin
         {
             get
             {
-                return Settings.Ustawienia.Default.czyZapamietacLogin;
+                return Settings.UstawieniaApp.Default.czyZapamietacLogin;
             }
             set
             {
-                Settings.Ustawienia.Default.czyZapamietacLogin = value;
+                Settings.UstawieniaApp.Default.czyZapamietacLogin = value;
             }
         }
         public int ktoreLogowanie
         {
             get
             {
-                return Settings.Ustawienia.Default.ktoreLogowanie;
+                return Settings.UstawieniaApp.Default.ktoreLogowanie;
             }
             set
             {
-                Settings.Ustawienia.Default.ktoreLogowanie = value;
+                Settings.UstawieniaApp.Default.ktoreLogowanie = value;
             }
         }
 
         public UstawieniaUzytkownika()
         {
-            logowanieLogin = Settings.Ustawienia.Default.logowanieLogin;
-            logowanieHaslo = Settings.Ustawienia.Default.logowanieHaslo;
-            ktoreLogowanie = Settings.Ustawienia.Default.ktoreLogowanie;
-            czyZapamietacLogin = Settings.Ustawienia.Default.czyZapamietacLogin;
-            sposobAutoryzacji = Settings.Ustawienia.Default.sposobAutoryzacji;
+            logowanieLogin = Settings.UstawieniaApp.Default.logowanieLogin;
+            logowanieHaslo = Settings.UstawieniaApp.Default.logowanieHaslo;
+            sposobAutoryzacji = Settings.UstawieniaApp.Default.sposobAutoryzacji;
+            czyZapamietacLogin = Settings.UstawieniaApp.Default.czyZapamietacLogin;
+            ktoreLogowanie = Settings.UstawieniaApp.Default.ktoreLogowanie;
         }
 
         public void zapisz()
         {
-            Settings.Ustawienia.Default.Save();
-            MessageBox.Show($"Weszło: {logowanieLogin}");
+            Settings.UstawieniaApp.Default.Save();
         }
     }
 }

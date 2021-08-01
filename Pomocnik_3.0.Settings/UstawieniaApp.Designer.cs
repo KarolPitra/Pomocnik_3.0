@@ -8,17 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
 namespace Pomocnik_3._0.Settings {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.7.0.0")]
-    public sealed partial class Ustawienia : global::System.Configuration.ApplicationSettingsBase {
+    public sealed partial class UstawieniaApp : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Ustawienia defaultInstance = ((Ustawienia)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Ustawienia())));
+        private static UstawieniaApp defaultInstance = ((UstawieniaApp)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new UstawieniaApp())));
         
-        public static Ustawienia Default {
+        public static UstawieniaApp Default {
             get {
                 return defaultInstance;
             }
@@ -33,18 +32,6 @@ namespace Pomocnik_3._0.Settings {
             }
             set {
                 this["logowanieLogin"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string logowanieHaslo {
-            get {
-                return ((string)(this["logowanieHaslo"]));
-            }
-            set {
-                this["logowanieHaslo"] = value;
             }
         }
         
@@ -81,6 +68,18 @@ namespace Pomocnik_3._0.Settings {
             }
             set {
                 this["ktoreLogowanie"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string logowanieHaslo {
+            get {
+                return ((string)(this["logowanieHaslo"]));
+            }
+            set {
+                this["logowanieHaslo"] = value;
             }
         }
     }

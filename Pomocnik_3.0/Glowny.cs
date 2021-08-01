@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using Pomocnik_3._0.Domain;
+using Pomocnik_3._0.Settings;
 
 namespace Pomocnik_3._0
 {
     public partial class Glowny : Form
     {        
         IBazaDanych _bazaDanych;
-        UstawieniaAplikacji _ustawieniaAplikacji;
+        UstawieniaUzytkownika _ustawieniaAplikacji;
         List<Kontrahent> _listaKontrahentow = new List<Kontrahent>();
 
         /// <summary>
@@ -25,12 +26,11 @@ namespace Pomocnik_3._0
         /// <param name="kopiuj">klasa odpowiedzialna za funkcję kopiowania danych do schowka</param>
         /// <param name="ustawienia">klasa odpowiedająca za przetrzymywanie ustawień aplikacji</param>
         /// <param name="plik">klasa odpowiedzialna za funkcję okna wyboru pliku lub folderu</param>
-        public Glowny(IBazaDanych bazaDanych, IKopiujPole kopiuj, UstawieniaAplikacji ustawienia)
+        public Glowny(IBazaDanych bazaDanych, UstawieniaUzytkownika ustawienia)
         {
             InitializeComponent();
 
             _bazaDanych = bazaDanych;
-            _kopiuj = kopiuj;
             _ustawieniaAplikacji = ustawienia;
             
             //pobranie listy kontrahentów z bazy danych
@@ -104,7 +104,7 @@ namespace Pomocnik_3._0
             {
                tekstDoSkopiowania = textBox.Text;
             }
-            _kopiuj.kopijDoSchowka(tekstDoSkopiowania);
+            //_kopiuj.kopijDoSchowka(tekstDoSkopiowania);
 
         }
 

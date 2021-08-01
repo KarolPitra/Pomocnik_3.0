@@ -3,18 +3,18 @@
   <Profiles />
   <Settings>
     <Setting Name="logowanieLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">karol</Value>
+    </Setting>
+    <Setting Name="logowanieHaslo" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="logowanieHaslo" GenerateDefaultValueInCode="false" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="sposobAutoryzacji" Type="System.Int32" Scope="User">
+    <Setting Name="sposobAutoryzacji" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="czyZapamietacLogin" Type="System.Boolean" Scope="User">
+    <Setting Name="czyZapamietacLogin" Type="System.String" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="ktoreLogowanie" Type="System.Int32" Scope="User">
+    <Setting Name="ktoreLogowanie" Type="System.String" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>

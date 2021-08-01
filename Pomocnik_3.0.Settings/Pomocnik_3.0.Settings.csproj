@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Pomocnik_3.0.Domain\Pomocnik_3.0.Domain.csproj" />
   </ItemGroup>
 
@@ -16,17 +20,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Ustawienia.Designer.cs">
+    <Compile Update="UstawieniaApp.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>
-      <DependentUpon>Ustawienia.settings</DependentUpon>
+      <DependentUpon>UstawieniaApp.settings</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Ustawienia.settings">
+    <None Update="UstawieniaApp.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Ustawienia.Designer.cs</LastGenOutput>
+      <LastGenOutput>UstawieniaApp.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

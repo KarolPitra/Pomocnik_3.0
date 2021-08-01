@@ -25,7 +25,7 @@ namespace Pomocnik_3._0.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("karol")]
         public string logowanieLogin {
             get {
                 return ((string)(this["logowanieLogin"]));
@@ -37,6 +37,7 @@ namespace Pomocnik_3._0.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string logowanieHaslo {
             get {
                 return ((string)(this["logowanieHaslo"]));
@@ -49,9 +50,9 @@ namespace Pomocnik_3._0.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int sposobAutoryzacji {
+        public string sposobAutoryzacji {
             get {
-                return ((int)(this["sposobAutoryzacji"]));
+                return ((string)(this["sposobAutoryzacji"]));
             }
             set {
                 this["sposobAutoryzacji"] = value;
@@ -61,9 +62,9 @@ namespace Pomocnik_3._0.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool czyZapamietacLogin {
+        public string czyZapamietacLogin {
             get {
-                return ((bool)(this["czyZapamietacLogin"]));
+                return ((string)(this["czyZapamietacLogin"]));
             }
             set {
                 this["czyZapamietacLogin"] = value;
@@ -73,9 +74,9 @@ namespace Pomocnik_3._0.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int ktoreLogowanie {
+        public string ktoreLogowanie {
             get {
-                return ((int)(this["ktoreLogowanie"]));
+                return ((string)(this["ktoreLogowanie"]));
             }
             set {
                 this["ktoreLogowanie"] = value;
